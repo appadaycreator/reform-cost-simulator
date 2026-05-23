@@ -116,10 +116,10 @@
 <meta name="twitter:image" content="https://appadaycreator.com/twitter-card.png">
 <meta name="twitter:site" content="@appadaycreator">
 </head>
-<body class="font-sans">
+<body class="font-sans"><a href="#main" class="sr-only">本文へスキップ</a>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<div class="max-w-lg mx-auto px-4 py-10">
+<div role="main" id="main" class="max-w-lg mx-auto px-4 py-10">
 
   <div class="text-center mb-8">
     <div class="text-6xl mb-4">🏠</div>
@@ -151,7 +151,7 @@
     <p class="text-xs text-gray-500 mb-3">複数選択可</p>
     <div class="grid grid-cols-2 gap-2 mb-5" id="parts-container"></div>
 
-    <button class="btn-primary" onclick="calculate()">費用を計算する →</button>
+    <button class="btn-primary" onclick="calculate()" aria-label="費用を計算する →">費用を計算する →</button aria-label="費用を計算する →">
   </div>
 
   <div id="results" class="card p-6 mb-4" style="display:none;">
