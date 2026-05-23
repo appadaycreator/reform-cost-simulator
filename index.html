@@ -24,6 +24,14 @@
   .input-field:focus { outline: none; border-color: #b45309; }
   label { display: block; font-size: 0.875rem; font-weight: 600; color: #374151; margin-bottom: 0.375rem; }
   select.input-field { appearance: none; background: white; }
+
+/* Phase 8: Mobile Optimization */
+input, select, textarea { font-size: 16px !important; }
+button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min-width: 48px; touch-action: manipulation; }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .max-w-lg { padding-left: 1rem; padding-right: 1rem; }
+}
 </style>
     <link rel="canonical" href="https://appadaycreator.com/reform-cost-simulator/">
 <script type="application/ld+json">
