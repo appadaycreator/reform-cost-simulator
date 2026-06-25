@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リフォーム費用シミュレーター | キッチン・浴室・外壁の相場が分かる！</title>
+  <meta name="description" content="キッチン・浴室・外壁リフォームの費用相場を5秒で無料チェック！補助金・減税情報も網羅。まずはかんたんシミュレーションから。">
+  <meta property="og:title" content="リフォーム費用シミュレーター | 完全無料・5秒で相場が分かる">
+  <meta property="og:description" content="キッチン・浴室・外壁リフォームの費用相場を5秒で無料チェック！補助金・減税情報も網羅。">
+  <meta property="og:type" content="website">
+
+  <!-- Consent Mode v2 -->
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});</script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-TXQGZRF9");</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDPNYD2875"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZDPNYD2875');</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+
+  <style>
+    /* ===== CSS RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      color: #1e293b;
+      line-height: 1.7;
+      background: #fff;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ===== VARIABLES ===== */
+    :root {
+      --blue: #2563EB;
+      --blue-dark: #1d4ed8;
+      --green: #10B981;
+      --green-dark: #059669;
+      --gray-light: #f3f4f6;
+      --gray-mid: #e5e7eb;
+      --gray-dark: #6b7280;
+      --text: #1e293b;
+      --white: #ffffff;
+      --section-pad: 80px 0;
+    }
+
+    /* ===== UTILITIES ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--gray-dark);
+      font-size: 1rem;
+      margin-bottom: 48px;
+    }
+    .btn-green {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 14px 32px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      text-align: center;
+    }
+    .btn-green:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn-blue {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 14px 32px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      text-align: center;
+    }
+    .btn-blue:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+    /* ===== HEADER ===== */
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 16px;
+    }
+    .header-logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--blue);
+      white-space: nowrap;
+    }
+    .header-logo span { color: var(--green); }
+    .header-nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+    }
+    .header-nav a {
+      font-size: 0.9rem;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover { color: var(--blue); }
+    .header-cta .btn-green { padding: 10px 22px; font-size: 0.9rem; }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('../assets/photos/photo_01.jpg') center center / cover no-repeat;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 20, 40, 0.62);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      width: 100%;
+    }
+    .hero-left { flex: 1; color: #fff; }
+    .hero-badge {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      letter-spacing: 0.05em;
+    }
+    .hero-left h1 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .hero-left .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 28px;
+      color: rgba(255,255,255,0.92);
+      font-weight: 500;
+    }
+    .hero-checks {
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .hero-checks li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .hero-checks li::before {
+      content: '✓';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      background: var(--green);
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .hero-left .btn-green { font-size: 1.1rem; padding: 16px 40px; }
+
+    /* Hero mini form card */
+    .hero-form-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 24px;
+      width: 320px;
+      flex-shrink: 0;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+    }
+    .hero-form-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 18px;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .form-step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .step-num {
+      width: 26px;
+      height: 26px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .form-step label { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+    .form-select {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1.5px solid var(--gray-mid);
+      border-radius: 6px;
+      font-size: 0.9rem;
+      margin-top: 4px;
+      color: var(--text);
+      background: #fff;
+    }
+    .hero-form-btn {
+      margin-top: 18px;
+      width: 100%;
+      background: var(--blue);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 13px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: block;
+      text-align: center;
+    }
+    .hero-form-btn:hover { background: var(--blue-dark); }
+    .hero-form-note {
+      font-size: 0.78rem;
+      color: var(--gray-dark);
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    /* ===== PAIN POINTS ===== */
+    #pain {
+      background: var(--gray-light);
+      padding: var(--section-pad);
+    }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .pain-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 24px 16px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pain-card:hover { transform: translateY(-4px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+    .pain-icon {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    .pain-card p {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* ===== COVERAGE ===== */
+    #coverage {
+      padding: var(--section-pad);
+      background: #fff;
+    }
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .coverage-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .coverage-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+    .coverage-card img { width: 100%; height: 220px; object-fit: cover; }
+    .coverage-info {
+      padding: 20px;
+      background: #fff;
+    }
+    .coverage-info h3 { font-size: 1.2rem; font-weight: 800; color: var(--blue); margin-bottom: 6px; }
+    .coverage-price {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+    .coverage-price span { font-size: 0.85rem; font-weight: 500; color: var(--gray-dark); }
+    .coverage-info p { font-size: 0.88rem; color: var(--gray-dark); line-height: 1.5; }
+
+    /* ===== STEPS ===== */
+    #steps {
+      background: var(--gray-light);
+      padding: var(--section-pad);
+    }
+    .steps-row {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .step-box {
+      flex: 1;
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      position: relative;
+    }
+    .step-circle {
+      width: 48px;
+      height: 48px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+    }
+    .step-box h4 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .step-box p { font-size: 0.85rem; color: var(--gray-dark); line-height: 1.5; }
+    .step-arrow {
+      font-size: 1.8rem;
+      color: var(--green);
+      padding: 0 8px;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    /* ===== SAMPLE RESULT ===== */
+    #result {
+      padding: var(--section-pad);
+      background: #fff;
+    }
+    .result-wrapper {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+      border-radius: 16px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .result-left {}
+    .result-label { font-size: 0.85rem; color: var(--gray-dark); font-weight: 500; margin-bottom: 4px; }
+    .result-price {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--blue);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+    .result-range { font-size: 0.95rem; color: var(--gray-dark); margin-bottom: 24px; }
+    .result-savings {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--green);
+      color: #fff;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+    .result-savings .save-amount { font-size: 1.4rem; font-weight: 900; }
+    .result-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .result-table th {
+      background: var(--blue);
+      color: #fff;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .result-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--gray-mid);
+    }
+    .result-table tr:nth-child(even) td { background: #f8fafc; }
+
+    /* Donut chart */
+    .result-right { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    .donut-wrap { position: relative; width: 180px; height: 180px; }
+    .donut-wrap svg { transform: rotate(-90deg); }
+    .donut-center {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .donut-pct { font-size: 2.2rem; font-weight: 900; color: var(--blue); }
+    .donut-label { font-size: 0.78rem; color: var(--gray-dark); font-weight: 500; }
+    .donut-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+    }
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ===== BEFORE / AFTER ===== */
+    #before-after {
+      background: var(--gray-light);
+      padding: var(--section-pad);
+    }
+    .ba-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .ba-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+    .ba-card img { width: 100%; height: 280px; object-fit: cover; }
+    .ba-card-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 20px;
+    }
+    .ba-badge {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .ba-badge.before { background: #fee2e2; color: #dc2626; }
+    .ba-badge.after { background: #dcfce7; color: #16a34a; }
+    .ba-card-label p { font-size: 0.9rem; color: var(--text); }
+    .ba-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+    }
+    .ba-thumb {
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 1;
+    }
+    .ba-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+    .ba-thumb:hover img { transform: scale(1.05); }
+
+    /* ===== SUBSIDIES ===== */
+    #subsidies {
+      padding: var(--section-pad);
+      background: #fff;
+    }
+    .subsidy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .subsidy-card {
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+      border: 2px solid var(--gray-mid);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .subsidy-card:hover { border-color: var(--green); box-shadow: 0 6px 20px rgba(16,185,129,0.15); }
+    .subsidy-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 900;
+      padding: 12px 24px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+    }
+    .subsidy-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .subsidy-card p { font-size: 0.88rem; color: var(--gray-dark); line-height: 1.6; }
+
+    /* ===== TRUST ===== */
+    #trust {
+      background: var(--gray-light);
+      padding: var(--section-pad);
+    }
+    .trust-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .trust-photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .trust-photo-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .trust-bullets { display: flex; flex-direction: column; gap: 28px; }
+    .trust-bullet {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .trust-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--blue);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .trust-text h4 { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .trust-text p { font-size: 0.88rem; color: var(--gray-dark); line-height: 1.6; }
+
+    /* ===== GALLERY ===== */
+    #gallery {
+      padding: 60px 0;
+      background: #fff;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery-grid img:hover { transform: scale(1.04); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+    /* ===== QUOTE / AFFILIATE ===== */
+    #quote {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      padding: var(--section-pad);
+    }
+    .quote-inner {
+      text-align: center;
+      color: #fff;
+    }
+    .quote-inner h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .quote-inner p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 32px;
+    }
+    .quote-affiliate {
+      margin-top: 24px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 20px 28px;
+      display: inline-block;
+    }
+    .quote-affiliate p { font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-bottom: 10px; }
+    .quote-affiliate a {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .quote-affiliate a:hover { color: #a5f3fc; }
+
+    /* ===== FAQ ===== */
+    #faq {
+      padding: var(--section-pad);
+      background: var(--gray-light);
+    }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 22px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .faq-question:hover { background: #f8faff; }
+    .faq-q-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-q-text::before {
+      content: 'Q';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .faq-toggle {
+      width: 26px;
+      height: 26px;
+      background: var(--gray-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--blue);
+      font-weight: 700;
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s;
+      padding: 0 22px;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding: 0 22px 18px;
+    }
+    .faq-answer p {
+      font-size: 0.9rem;
+      color: var(--gray-dark);
+      line-height: 1.7;
+      border-left: 3px solid var(--green);
+      padding-left: 12px;
+    }
+
+    /* ===== FINAL CTA ===== */
+    #final-cta {
+      background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+      padding: var(--section-pad);
+      text-align: center;
+    }
+    #final-cta h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    #final-cta p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+    .final-cta-btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--green-dark);
+      font-size: 1.2rem;
+      font-weight: 800;
+      padding: 18px 52px;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .final-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+    .final-cta-note {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.75);
+      margin-top: 16px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0f172a;
+      color: rgba(255,255,255,0.65);
+      padding: 36px 20px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    footer a { color: rgba(255,255,255,0.65); transition: color 0.2s; }
+    footer a:hover { color: #fff; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+
+    /* ===== BACK TO TOP ===== */
+    #back-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 44px;
+      height: 44px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(37,99,235,0.35);
+      transition: opacity 0.3s, background 0.2s;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #back-top.visible { opacity: 1; pointer-events: auto; }
+    #back-top:hover { background: var(--blue-dark); }
+
+    /* ===== MOBILE RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .header-nav { display: none; }
+      .hero-inner { flex-direction: column; gap: 32px; }
+      .hero-left h1 { font-size: 1.8rem; }
+      .hero-form-card { width: 100%; }
+      .pain-grid { grid-template-columns: repeat(2, 1fr); }
+      .pain-grid li:last-child { grid-column: 1 / -1; }
+      .coverage-grid { grid-template-columns: 1fr; }
+      .steps-row { flex-direction: column; gap: 12px; }
+      .step-arrow { transform: rotate(90deg); }
+      .result-wrapper { grid-template-columns: 1fr; }
+      .ba-main { grid-template-columns: 1fr; }
+      .ba-grid { grid-template-columns: repeat(3, 1fr); }
+      .subsidy-grid { grid-template-columns: 1fr; }
+      .trust-inner { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .section-title { font-size: 1.6rem; }
+    }
+    @media (max-width: 600px) {
+      .header-logo { font-size: 1rem; }
+      .hero-left h1 { font-size: 1.5rem; }
+      .pain-grid { grid-template-columns: repeat(2, 1fr); }
+      .ba-grid { grid-template-columns: repeat(3, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .result-price { font-size: 2.2rem; }
+      #final-cta h2 { font-size: 1.5rem; }
+      .final-cta-btn { font-size: 1rem; padding: 15px 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <div class="header-inner">
+    <div class="header-logo">リフォーム費用<span>シミュレーター</span></div>
+    <nav class="header-nav">
+      <a href="#pain">お悩み</a>
+      <a href="#coverage">対応箇所</a>
+      <a href="#steps">ご利用の流れ</a>
+      <a href="#result">シミュレーション例</a>
+      <a href="#subsidies">補助金・減税</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+    <div class="header-cta">
+      <a href="../" class="btn-green">無料で試す →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-badge">完全無料・5秒</span>
+      <h1>リフォーム費用<br>シミュレーター</h1>
+      <p class="subtitle">キッチン・浴室・外壁の相場が分かる！</p>
+      <ul class="hero-checks">
+        <li>入力はたった4ステップ、5秒で完了</li>
+        <li>全国対応・完全無料で費用相場を確認</li>
+        <li>補助金・減税額も自動で試算</li>
+        <li>見積もり比較で最大30%のコスト削減</li>
+      </ul>
+      <a href="../" class="btn-green">今すぐ無料でシミュレーション →</a>
+    </div>
+
+    <!-- Mini Form Card -->
+    <div class="hero-form-card">
+      <h3>かんたん4ステップで<br>費用相場をチェック!</h3>
+      <div class="form-step">
+        <div class="step-num">1</div>
+        <div style="flex:1">
+          <label>リフォーム箇所</label>
+          <select class="form-select">
+            <option>キッチン</option>
+            <option>浴室・バスルーム</option>
+            <option>外壁・屋根</option>
+            <option>トイレ</option>
+            <option>洗面所</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="step-num">2</div>
+        <div style="flex:1">
+          <label>物件種別</label>
+          <select class="form-select">
+            <option>一戸建て</option>
+            <option>マンション</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="step-num">3</div>
+        <div style="flex:1">
+          <label>築年数</label>
+          <select class="form-select">
+            <option>10年未満</option>
+            <option>10〜20年</option>
+            <option>20〜30年</option>
+            <option>30年以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="step-num">4</div>
+        <div style="flex:1">
+          <label>グレード</label>
+          <select class="form-select">
+            <option>スタンダード</option>
+            <option>ミドルグレード</option>
+            <option>プレミアム</option>
+          </select>
+        </div>
+      </div>
+      <a href="../" class="hero-form-btn">費用相場を確認する →</a>
+      <p class="hero-form-note">登録不要・完全無料</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAIN POINTS ===== -->
+<section id="pain">
+  <div class="container">
+    <h2 class="section-title">こんなお悩みはありませんか？</h2>
+    <p class="section-subtitle">リフォームを検討中の方によく聞かれる「困りごと」を解決します</p>
+    <ul class="pain-grid">
+      <li class="pain-card">
+        <div class="pain-icon">😰</div>
+        <p>リフォームの<br>相場が全く<br>分からない</p>
+      </li>
+      <li class="pain-card">
+        <div class="pain-icon">💸</div>
+        <p>業者に言われた<br>金額が高いのか<br>安いのか不安</p>
+      </li>
+      <li class="pain-card">
+        <div class="pain-icon">📋</div>
+        <p>見積もりを取る前に<br>まず予算感を<br>掴みたい</p>
+      </li>
+      <li class="pain-card">
+        <div class="pain-icon">🏦</div>
+        <p>補助金・減税が<br>使えるか<br>知りたい</p>
+      </li>
+      <li class="pain-card">
+        <div class="pain-icon">🔍</div>
+        <p>複数業者に<br>一括で見積もりを<br>取りたい</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== COVERAGE ===== -->
+<section id="coverage">
+  <div class="container">
+    <h2 class="section-title">対応箇所</h2>
+    <p class="section-subtitle">キッチン・浴室・外壁など主要箇所の費用相場をシミュレーション</p>
+    <div class="coverage-grid">
+      <div class="coverage-card">
+        <img src="../assets/photos/photo_02.jpg" alt="キッチンリフォーム" loading="lazy">
+        <div class="coverage-info">
+          <h3>🍳 キッチン</h3>
+          <div class="coverage-price">50万円〜<span>200万円</span></div>
+          <p>システムキッチンの交換からレイアウト変更まで対応。グレードや間取りに応じた費用を即算出します。</p>
+        </div>
+      </div>
+      <div class="coverage-card">
+        <img src="../assets/photos/photo_03.jpg" alt="浴室・バスルームリフォーム" loading="lazy">
+        <div class="coverage-info">
+          <h3>🛁 浴室・バスルーム</h3>
+          <div class="coverage-price">60万円〜<span>180万円</span></div>
+          <p>ユニットバスの交換から在来工法への変更まで。暖房・換気設備込みの費用も算出可能。</p>
+        </div>
+      </div>
+      <div class="coverage-card">
+        <img src="../assets/photos/photo_04.jpg" alt="外壁・屋根リフォーム" loading="lazy">
+        <div class="coverage-info">
+          <h3>🏠 外壁・屋根</h3>
+          <div class="coverage-price">80万円〜<span>300万円</span></div>
+          <p>外壁塗装・張替え・屋根修繕まで一括対応。建物の面積や劣化状況に応じた相場をご確認いただけます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section id="steps">
+  <div class="container">
+    <h2 class="section-title">シミュレーションの流れ</h2>
+    <p class="section-subtitle">たったの4ステップ、5秒で費用相場をチェックできます</p>
+    <div class="steps-row">
+      <div class="step-box">
+        <div class="step-circle">1</div>
+        <h4>リフォーム箇所を選択</h4>
+        <p>キッチン・浴室・外壁など<br>気になる箇所を選びます</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-box">
+        <div class="step-circle">2</div>
+        <h4>物件情報を入力</h4>
+        <p>一戸建て・マンションの種別と<br>築年数を入力します</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-box">
+        <div class="step-circle">3</div>
+        <h4>グレードを選択</h4>
+        <p>スタンダード〜プレミアムまで<br>ご予算に合わせて選択</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-box">
+        <div class="step-circle">4</div>
+        <h4>費用相場を確認</h4>
+        <p>補助金情報付きで<br>詳細な費用相場を表示</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SAMPLE RESULT ===== -->
+<section id="result">
+  <div class="container">
+    <h2 class="section-title">シミュレーション結果 サンプル</h2>
+    <p class="section-subtitle">キッチン（ミドルグレード）一戸建て 築20年 の試算例</p>
+    <div class="result-wrapper">
+      <div class="result-left">
+        <p class="result-label">推定費用相場（税込）</p>
+        <div class="result-price">210万円〜420万円</div>
+        <p class="result-range">相場中央値：<strong>315万円</strong></p>
+        <div class="result-savings">
+          <span>補助金・減税で</span>
+          <span class="save-amount">54万円</span>
+          <span>節約可能！</span>
+        </div>
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>費用項目</th>
+              <th>目安金額</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>本体・設備費</td><td>150〜280万円</td></tr>
+            <tr><td>工事費・施工費</td><td>40〜90万円</td></tr>
+            <tr><td>解体・撤去費</td><td>10〜25万円</td></tr>
+            <tr><td>諸経費・廃材処理</td><td>10〜25万円</td></tr>
+            <tr><td>補助金（子育てエコ）</td><td><span style="color:var(--green);font-weight:700">−20万円</span></td></tr>
+            <tr><td>減税（住宅ローン）</td><td><span style="color:var(--green);font-weight:700">−最大34万円</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="result-right">
+        <div class="donut-wrap">
+          <svg width="180" height="180" viewBox="0 0 180 180">
+            <!-- Background circle -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="#e5e7eb" stroke-width="20"/>
+            <!-- Green segment: 80% = 439.82 out of 549.78 circumference -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="#10B981" stroke-width="20"
+              stroke-dasharray="351.86 87.96"
+              stroke-linecap="round"/>
+            <!-- Blue segment: 15% -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="#2563EB" stroke-width="20"
+              stroke-dasharray="65.97 483.85"
+              stroke-dashoffset="-351.86"
+              stroke-linecap="round"/>
+          </svg>
+          <div class="donut-center">
+            <span class="donut-pct">80%</span>
+            <span class="donut-label">実現可能性</span>
+          </div>
+        </div>
+        <div class="donut-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> 補助金対象工事 80%</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div> 減税対象 15%</div>
+          <div class="legend-item"><div class="legend-dot" style="background:var(--gray-mid)"></div> その他 5%</div>
+        </div>
+        <a href="../" class="btn-blue" style="width:100%;text-align:center">自分の費用を試算する →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE / AFTER ===== -->
+<section id="before-after">
+  <div class="container">
+    <h2 class="section-title">Before / After 事例</h2>
+    <p class="section-subtitle">実際のリフォーム事例をご覧ください</p>
+    <div class="ba-main">
+      <div class="ba-card">
+        <img src="../assets/photos/photo_05.jpg" alt="リフォーム前" loading="lazy">
+        <div class="ba-card-label">
+          <span class="ba-badge before">Before</span>
+          <p>築22年・古くなったタイル張りキッチン。収納も少なく使いづらい状態。</p>
+        </div>
+      </div>
+      <div class="ba-card">
+        <img src="../assets/photos/photo_06.jpg" alt="リフォーム後" loading="lazy">
+        <div class="ba-card-label">
+          <span class="ba-badge after">After</span>
+          <p>システムキッチン全交換で清潔感UP！収納量1.5倍・作業スペースも広くなりました。</p>
+        </div>
+      </div>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-thumb"><img src="../assets/photos/photo_07.jpg" alt="事例7" loading="lazy"></div>
+      <div class="ba-thumb"><img src="../assets/photos/photo_08.jpg" alt="事例8" loading="lazy"></div>
+      <div class="ba-thumb"><img src="../assets/photos/photo_09.jpg" alt="事例9" loading="lazy"></div>
+      <div class="ba-thumb"><img src="../assets/photos/photo_10.jpg" alt="事例10" loading="lazy"></div>
+      <div class="ba-thumb"><img src="../assets/photos/photo_11.jpg" alt="事例11" loading="lazy"></div>
+      <div class="ba-thumb"><img src="../assets/photos/photo_12.jpg" alt="事例12" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SUBSIDIES ===== -->
+<section id="subsidies">
+  <div class="container">
+    <h2 class="section-title">補助金・減税で節約</h2>
+    <p class="section-subtitle">知っておくと得をする！リフォームで使える主な補助金・優遇制度</p>
+    <div class="subsidy-grid">
+      <div class="subsidy-card">
+        <div class="subsidy-badge">最大30万円</div>
+        <h3>子育てエコホーム支援事業</h3>
+        <p>省エネ性能の高いリフォームに対して国が補助金を交付。子育て世帯・若者夫婦世帯は最大30万円の補助が受けられます。</p>
+      </div>
+      <div class="subsidy-card">
+        <div class="subsidy-badge">最大200万円</div>
+        <h3>住宅ローン減税（リフォーム）</h3>
+        <p>ローンを利用したリフォームは最長10年間にわたって所得税・住民税が控除されます。耐震・バリアフリー・省エネ工事が対象。</p>
+      </div>
+      <div class="subsidy-card">
+        <div class="subsidy-badge">最大20万円</div>
+        <h3>介護保険住宅改修補助</h3>
+        <p>要介護・要支援認定を受けた方の自宅をバリアフリー化するリフォームに最大20万円の補助が適用されます。</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <p style="color:var(--gray-dark);font-size:0.9rem;margin-bottom:16px;">シミュレーターで申請可能な補助金も自動で確認できます</p>
+      <a href="../" class="btn-green">補助金を含めた費用を試算する →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST ===== -->
+<section id="trust">
+  <div class="container">
+    <h2 class="section-title">安心・納得のポイント</h2>
+    <p class="section-subtitle">安心してシミュレーションをご利用いただくための3つの理由</p>
+    <div class="trust-inner">
+      <div class="trust-photo-grid">
+        <img src="../assets/photos/photo_13.jpg" alt="信頼のリフォーム事例1" loading="lazy">
+        <img src="../assets/photos/photo_14.jpg" alt="信頼のリフォーム事例2" loading="lazy">
+        <img src="../assets/photos/photo_15.jpg" alt="信頼のリフォーム事例3" loading="lazy">
+        <img src="../assets/photos/photo_16.jpg" alt="信頼のリフォーム事例4" loading="lazy">
+      </div>
+      <div class="trust-bullets">
+        <div class="trust-bullet">
+          <div class="trust-icon">🔒</div>
+          <div class="trust-text">
+            <h4>登録不要・個人情報不要</h4>
+            <p>メールアドレスや氏名などの個人情報は一切不要。ブラウザだけで匿名で費用相場を確認できます。強引な営業は一切ありません。</p>
+          </div>
+        </div>
+        <div class="trust-bullet">
+          <div class="trust-icon">📊</div>
+          <div class="trust-text">
+            <h4>全国の施工データをもとに算出</h4>
+            <p>全国の実際のリフォーム施工データと市場動向をもとに、地域・グレード・築年数に応じた精度の高い相場情報をお届けします。</p>
+          </div>
+        </div>
+        <div class="trust-bullet">
+          <div class="trust-icon">📱</div>
+          <div class="trust-text">
+            <h4>スマホでもかんたん5秒</h4>
+            <p>スマートフォンに完全対応。隙間時間に外出先でも費用相場をすばやくチェック。PDFで結果を保存・共有することも可能です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:32px">施工事例ギャラリー</h2>
+    <div class="gallery-grid">
+      <img src="../assets/photos/photo_17.jpg" alt="施工事例17" loading="lazy">
+      <img src="../assets/photos/photo_18.jpg" alt="施工事例18" loading="lazy">
+      <img src="../assets/photos/photo_19.jpg" alt="施工事例19" loading="lazy">
+      <img src="../assets/photos/photo_20.jpg" alt="施工事例20" loading="lazy">
+      <img src="../assets/photos/photo_21.jpg" alt="施工事例21" loading="lazy">
+      <img src="../assets/photos/photo_22.jpg" alt="施工事例22" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE / AFFILIATE ===== -->
+<section id="quote">
+  <div class="container">
+    <div class="quote-inner">
+      <h2>一括見積もりで、もっとお得に！</h2>
+      <p>シミュレーションで相場を把握したら、複数の業者から見積もりを取りましょう。<br>比較することで平均20〜30%のコスト削減が見込めます。</p>
+      <a href="../" class="btn-green" style="font-size:1.1rem;padding:16px 44px;">まず費用相場をシミュレーション →</a>
+      <div class="quote-affiliate">
+        <p>複数業者に一括で見積もり依頼ができるサービスはこちら（外部サイト）</p>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ8+DVKZVU+5PBE+5YJRM" rel="nofollow" target="_blank">無料で一括見積もりする →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="container">
+    <h2 class="section-title">よくある質問</h2>
+    <p class="section-subtitle">ご利用前によく寄せられる質問にお答えします</p>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">このシミュレーターは無料で使えますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>はい、完全無料でご利用いただけます。登録やメールアドレスの入力も一切不要です。何度でも条件を変えてシミュレーションをお試しください。</p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">シミュレーション結果はどれくらい正確ですか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>実際の施工データや市場価格をもとに算出していますが、最終的な費用は建物の状態・施工業者・地域によって異なります。あくまで「費用の目安・相場感をつかむ」ためのツールとしてご活用ください。正確な金額は業者への見積もりをお勧めします。</p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">補助金は必ずもらえますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>シミュレーターで表示する補助金・減税は代表的な制度をもとにした試算です。実際の受給には申請要件・予算上限・施工タイミングなどの条件があります。詳細は各制度の公式サイトや担当窓口にご確認ください。</p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">スマートフォンでも使えますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>はい、スマートフォン・タブレット・PCすべてに対応したレスポンシブデザインです。外出先や隙間時間でも快適にご利用いただけます。</p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">シミュレーション結果を保存・印刷できますか？</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>はい、シミュレーター内には「印刷」「PDFエクスポート」機能を搭載しています。業者への相談時や家族での比較検討時にそのままご活用いただけます。</p>
+        </div>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span class="faq-q-text">対応しているリフォーム箇所を教えてください</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>キッチン・浴室・外壁・屋根・トイレ・洗面所・窓・床・壁・断熱など幅広い箇所に対応しています。今後も対応箇所を順次拡充予定です。</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section id="final-cta">
+  <div class="container">
+    <h2>今すぐ、リフォームの相場をチェック！</h2>
+    <p>登録不要・完全無料・5秒で費用の目安が分かります<br>まずはかんたんシミュレーションをお試しください</p>
+    <a href="../" class="final-cta-btn">無料でシミュレーションを始める →</a>
+    <p class="final-cta-note">※登録不要・完全無料・個人情報の入力は不要です</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-links">
+    <a href="#">ホーム</a>
+    <a href="#pain">お悩み</a>
+    <a href="#coverage">対応箇所</a>
+    <a href="#subsidies">補助金情報</a>
+    <a href="#faq">よくある質問</a>
+    <a href="../privacy-policy.html">プライバシーポリシー</a>
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+  <p>運営: AppADayCreator | 株式会社Tech&amp;Brace</p>
+  <p style="margin-top:6px;font-size:0.8rem;">© 2025 リフォーム費用シミュレーター. All rights reserved.</p>
+</footer>
+
+<!-- Back to Top -->
+<a id="back-top" href="#" aria-label="ページトップへ">↑</a>
+
+<script>
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Back to top button
+  const backTop = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backTop.classList.add('visible');
+    } else {
+      backTop.classList.remove('visible');
+    }
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
